@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panetone Delivery</title>
+    <!-- CSS removido para branch separada -->
+</head>
+<body>
+    <div class="container">
+        <h1>Panetone Delivery - O Panetone chega rapidin!</h1>
+        <form id="panetoneForm">
+            <label for="cep">Manda o CEP aí:</label>
+            <input type="text" id="cep" name="cep" maxlength="8" pattern="\d{8}" required placeholder="Só número, pfvr">
+            <label for="numero">E o número da casa?</label>
+            <input type="text" id="numero" name="numero" required placeholder="Sem letra ñ to tratando erros :c">
+            <button type="submit">Quero meu Panetone!</button>
+        </form>
+        <div id="endereco"></div>
+        <div id="mensagem"></div>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>
