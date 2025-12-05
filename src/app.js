@@ -21,7 +21,9 @@ document.getElementById('panetoneForm').addEventListener('submit', async functio
         }
         const { logradouro, bairro, localidade, uf } = data;
         enderecoDiv.textContent = `Endereço encontrado: ${logradouro}, ${numero} – ${bairro}, ${localidade} – ${uf}`;
-        mensagemDiv.textContent = `🚚 Panetone despachado! Vai chegar quentinho em: ${logradouro}, ${numero} – ${bairro}, ${localidade} – ${uf}. Se não chegar, culpa dos duendes!`;
+        mensagemDiv.textContent = `🚚 Panetone despachado! Vai chegar quentinho em: ${logradouro}, ${numero} – ${bairro}, ${localidade} – ${uf}.` ;
+        mensagemDiv.style.fontWeight = 'bold';
+        mensagemDiv.textContent = `Se não chegar é culpa dos duendes!`;
     } catch (error) {
         enderecoDiv.textContent = 'Deu ruim na consulta! Tenta de novo ou chama o suporte dos duendes.';
     }
